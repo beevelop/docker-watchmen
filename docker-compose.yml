@@ -1,0 +1,9 @@
+redis:
+  image: redis:2
+  volumes: ["./data:/data"]
+
+watchmen:
+  build: ./
+  ports: ["3000:3000"]
+  links: ["redis"]
+  env_file: docker-compose.env

@@ -1,0 +1,6 @@
+apps:
+  - script   : 'run-monitor-server.js'
+    name     : 'Watchmen Monitor'
+  - script   : 'run-web-server.js'
+    name     : 'Watchmen Webserver'
+
