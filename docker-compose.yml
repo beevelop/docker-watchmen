@@ -3,7 +3,7 @@ redis:
   volumes: ["./data:/data"]
 
 watchmen:
-  build: ./
+  image: beevelop/watchmen
   ports: ["3000:3000"]
   links: ["redis"]
   env_file: docker-compose.env
